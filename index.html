@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App by Helen</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+   <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/28195d812b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+   <div class="weather">
+        <form id="search-city">
+            <div class="row-2">
+             <input type="search" placeholder="Enter a city " autocomplete="off" class = cityNow
+                id="city-input" />
+               <input type="submit" class="searchNow" value="Search" />
+            </form>
+        <button type="button" class="location-button">📍 Find your location</button>
+
+</div>
+ <h1 id="city-name">
+                Hong Kong
+            </h1>
+
+            <h2 class="day" id="current-time">
+            
+        </h2>
+       <h3 class = temperature id = "celciusTemp">
+        <span class="temperature" id="findTemperature">17</span><span class="units">
+            
+            <a href="#" class="units"id="celsius-link">°C</a> 
+        </span>
+ </h3>
+  <div class="row">
+                <div class="col-8">
+                    <ul>
+                       
+                        <li>
+                            Humidity
+                        </li>
+                       77%
+                        </div>
+                    </ul>
+                  
+                       
+
+                <div class="col-1 ">
+                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
+                </div>
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="col-4">
+                                Monday
+                            </div>
+                            <div class="col-3">
+                                28/03
+                            </div>
+                            <div class="col-2">
+                                18°C
+                            </div>
+
+                            <div class="col-3">
+                                <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="rain">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-4">
+                                Tuesday
+                            </div>
+                            <div class="col-3">
+                                29/03
+                            </div>
+                            <div class="col-2">
+                                17°C
+                            </div>
+                            <div class="col-3">
+                                <img src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png" alt="cloudy">
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-4">
+                                Wednesday
+                            </div>
+                            <div class="col-3">
+                                30/03
+                            </div>
+                            <div class="col-2">
+                                15°C
+                            </div>
+                            <div class="col-3">
+                                <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png" alt="rain">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-4">
+                                Thursday
+                            </div>
+                            <div class="col-3">
+                                31/03
+                            </div>
+                            <div class="col-2">
+                                18°C
+                            </div>
+                            <div class="col-3">
+                                <img src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png" alt="cloudy">
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
